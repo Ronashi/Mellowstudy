@@ -7,4 +7,4 @@ urlpatterns = [
 ]
 
 
-# /home/mellow/Desktop/CODERIG/DJANGO/Mellowstudy/Mellowstudy/templates/home.html
+   
