@@ -7,5 +7,10 @@ class Room(models.Model):
     #topic
     name = models.CharField(max_length=200)
     description = models.TextField(null=True, blank=True)
-    # participants =
+    # participants = models.
     updated = models.DateTimeField(auto_now =True)
+    created = models.DateTimeField(auto_now_add=True)
+    
+    
+    def __str__(self):
+        return self.name
