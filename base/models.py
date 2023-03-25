@@ -13,4 +13,13 @@ class Room(models.Model):
     
     
     def __str__(self):
-        return self.name
+        return self.names
+    
+class Message(models.Model):
+    #user=
+    room = models.ForeignKey(Room, on_delete=models.CASCADE)
+    body = models.TextField()
+    updated = models.DateTimeField(auto_now =True)
+    created = models.DateTimeField(auto_now_add=True)
+    
+    1:28
